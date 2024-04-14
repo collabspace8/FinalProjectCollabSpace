@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sample.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header id="header-main">
+        <div id="list-items">
+            <span class="collab-space">Collab Space</span>
+            <ul class="nav-list">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+            </ul>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <form class="login-form" id="login-form">
+            <h1>Login</h1>
+            <label for="login-user">Username: </label><br>
+            <input type="text" id="login-user" name="username" class="input-field" pattern=".{3,20}"
+                oninvalid="setCustomValidity('Your username must be between 3 and 20 characters')"
+                oninput="setCustomValidity('')" autocomplete="username"><br>
+            <label for="login-password">Password: </label><br>
+            <input type="password" id="login-password" name="password" class="input-field" required
+                autocomplete="current-password"><br>
+            <button type="button" id="login-button">Login</button> <button type="button"
+                onclick="LoginBackBtn()">Cancel</button><br><br>
+            <div id="login-error-message" style="display: none;"></div>
+        </form>
+    </div>
+
+    <footer>
+        <p class="center">
+            &copy; 2024 Collab Space. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

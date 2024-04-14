@@ -1,0 +1,8 @@
+ type: "Meeting Room",
+  capacity: 8,
+  smoking: "Yes",
+  available: "2024-04-30",
+  term: "Weekly",
+  price: "1800",
+  contactInfo: "owner5@email.com",
+  imageURL: "img/image.jpg",

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owner-style.css">
+    <title>Owner Property</title>
+</head>
+
+<body>
+    <header id="header-main">
+        <div id="list-items">
+            <span class="collab-space">Collab Space</span>
+            <ul class="nav-list">
+                <!-- <a href="owner-dashboard.html">Dashboard</a> -->
+                <a href="owner-property.html">Property</a>
+                <!-- <a href="owner-workspace.html">Workspace</a> -->
+                <a href="index.html">Logout</a>
+                Welcome Owner
+            </ul>
+        </div>
+    </header>
+    <section>
+        <br>
+        <h1>Owner Property</h1>
+        <div class="modal-button">
+            <button id="addPropertyBtn">Add Property </button>
+        </div>
+        <!--FOR DELETE MODAL -->
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Are you sure you want to delete this property?</p>
+                <button id="confirmDelete">Yes</button>
+                <button id="cancelDelete">No</button>
+            </div>
+        </div>
+        <!--FOR DELETE MODAL -->
+
+        <table id="propertyTable">
+            <thead>
+                <tr>
+                    <th>Address</th>
+                    <th>Neighborhood</th>
+                    <th>Square Feet</th>
+                    <th>Parking</th>
+                    <th>Public Transportation</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="propertyBody">
+                <!-- Existing table rows will be appended here -->
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <p class="center">
+            &copy; 2024 Collab Space. All rights reserved.
+        </p>
+    </footer>
+    <script src="owner-property.js"></script>
+</body>
+
+</html>

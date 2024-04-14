@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coworker</title>
+    <link rel="stylesheet" href="owner-style.css">
+</head>
+
+<body>
+</header>
+<header id="header-main">
+    <div id="list-items">
+        <span class="collab-space">Collab Space</span>
+        <ul class="nav-list">
+            <a href="coworker.html">Coworker Dashboard</a>
+            <a id="logoutBtn" href="index.html">Logout</a>
+            Welcome Coworker
+        </ul>
+    </div>
+</header>
+
+        
+
+<section>
+    <h1 class="dashboard-heading">Workspace and Rooms</h1><br>
+    <div class="modal-button">
+        <button id="searchbtn" onclick="search()">Search</button>
+        <!-- View Rented Workspace Button -->
+        <button id="viewRentedWorkspaceBtn" onclick="viewRentedWorkspaceBtn()">View
+            Rented Workspace</button>
+        </div><br><br>
+        <table id="propertyTable">
+            <thead>
+                <tr>
+                    <th>Address</th>
+                    <th>Neighborhood</th>
+                    <th>Square Feet</th>
+                    <th>Parking</th>
+                    <th>Public Transportation</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Property data will be populated here -->
+            </tbody>
+        </table><br><br><br><br>
+    </section>
+
+     <div id="workspaceModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-btn" onclick="closeModal()" aria-label="Close modal">&times;</span>
+        </div>
+    </div>
+    
+    <!-- Image modal container
+    <div id="imageModal" class="modal">
+        <div id="enlargedImageContainer">
+            <img id="enlargedImage" src="#" alt="Enlarged Image">
+        </div>
+    </div>
+   -->
+
+
+    <footer>
+        <p class="center">
+            &copy; 2024 Collab Space. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="coworker.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coworker</title>
+  <link rel="stylesheet" href="owner-style.css">
+</head>
+
+<body>
+  <header id="header-main">
+    <div id="list-items">
+      <span class="collab-space">Collab Space</span>
+      <ul class="nav-list">
+        <a href="coworker.html">Coworker Dashboard</a>
+        <a id="logoutBtn">Logout</a>
+        Welcome Coworker
+      </ul>
+    </div>
+  </header>
+
+  <section>
+    <div class="property-table">
+      <h2 class="dashboard-heading">Search for Property and Work Space</h2>
+      <div class="form-container">
+        <div class="searchform">
+          <div class="form-group">
+            <label for="address">Address: </label>
+            <input type="text" id="address" name="address" placeholder="Enter keyword" />
+          </div>
+          <div class="form-group">
+            <label for="neighborhood">Neighborhood: </label>
+            <select id="neighborhood" name="neighborhood">
+              <option value="" disabled selected>Select</option>
+              <option value="Downtown">Downtown</option>
+              <option value="North East">North East</option>
+              <option value="North West">North West</option>
+              <option value="South East">South East</option>
+              <option value="South West">South West</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="squarefeet">Square Feet: </label>
+            <input type="number" id="squarefeet" name="squarefeet" placeholder="Greater than or equal to">
+          </div>
+          <div class="form-group">
+            <label for="parking">Parking: </label>
+            <select id="parking" name="parking">
+              <option value="" disabled selected>Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="publictranspo">Public Transportation: </label>
+            <select id="publictranspo" name="publictranspo">
+              <option value="" disabled selected>Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="capacity">Seat Capacity: </label>
+            <input type="number" id="capacity" name="capacity" placeholder="Greater than or equal">
+          </div>
+          <div class="form-group">
+            <label for="smoking">Smoking: </label>
+            <select id="smoking" name="smoking">
+              <option value="" disabled selected>Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dateavailable">Date Available:</label>
+            <input type="date" id="dateavailable" name="dateavailable">
+          </div>
+          <div class="form-group">
+            <label for="term">Lease Term: </label>
+            <select id="term" name="term">
+              <option value="" disabled selected>Select</option>
+              <option value="Daily">Daily</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Monthly">Monthly</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="price">Price: </label>
+            <input type="number" id="price" name="price" placeholder="Greater than or qual to">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-button">
+
+      <button id="searchBtn" class="btn">Search</button>
+      <button id="clearFiltersBtn" class="btn">Clear Filters</button>
+    </div>
+    </div>
+
+    <hr class="property-hr" />
+    <br>
+    <h3>Search Results:</h3><br>
+
+    <table id="propertyTable">
+      <thead>
+        <tr>
+          <th>Address</th>
+          <th>Neighborhood</th>
+          <th>Square Feet</th>
+          <th>Parking</th>
+          <th>Public Transportation</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="propertyTableBody">
+      </tbody>
+    </table>
+
+    <br /><br />
+
+    <table id="workspaceTable">
+      <div>
+        <h3>Workspace details</h3>
+      </div>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Seat Capacity</th>
+          <th>Allow Smoking</th>
+          <th>Date Available</th>
+          <th>Lease Term</th>
+          <th>Price</th>
+          <th>Image URL</th>
+          <th>Contact Information</th>
+        </tr>
+      </thead>
+
+      <tbody id="workspaceTableBody"></tbody>
+    </table>
+  </section>
+
+<br/><br/>
+
+  <footer>
+    <p class="center">
+      &copy; 2024 Collab Space. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="coworker-propSearch.js"></script>
+</body>
+
+</html>

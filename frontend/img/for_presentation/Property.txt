@@ -1,0 +1,5 @@
+  address: "777 Pacific Blvd",
+    neighborhood: "South West",
+    squareFeet: 1800,
+    parking: "Yes",
+    publicTranspo: "No",

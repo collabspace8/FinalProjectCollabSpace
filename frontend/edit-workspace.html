@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owner-style.css">
+    <title>Edit Workspace</title>
+</head>
+
+<body>
+    <h1>Edit Workspace</h1>
+    <form id="editForm">
+        <label for="type">Type:</label><br>
+        <input type="text" id="type" name="type" required><br>
+        <label for="capacity">Capacity:</label><br>
+        <input type="number" id="capacity" name="capacity" required><br>
+        <label for="smoking">Smoking:</label><br>
+        <select id="smoking" name="smoking" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+        <label for="available">Available Date:</label><br>
+        <input type="date" id="available" name="available" required><br>
+        <label for="term">Lease Term:</label><br>
+        <input type="text" id="term" name="term" required><br><br>
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price" required><br><br>
+        <!-- Hidden fields for propertyId and workspaceId -->
+        <input type="hidden" id="propertyId" name="propertyId">
+        <input type="hidden" id="workspaceId" name="workspaceId">
+        <button id="updateWorkspaceBtn" type="submit">Update</button>
+        <button id="backEdit" type="button">Back</button> <!-- Changed to type="button" -->
+    </form>
+    <script src="edit-workspace.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coworker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="header-main">
+      <div id="list-items">
+        <span class="collab-space">Collab Space</span>
+        <ul class="nav-list">
+          <a href="coworker.html">Coworker Dashboard</a>
+          <a id="logoutBtn">Logout</a>
+          Welcome Coworker
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="sort-button-container">
+        <br />
+        <button onclick="SortTable('rating')">Sort by Rating</button>
+        <button onclick="SortTable('price')">Sort by Price</button>
+      </div>
+      <br />
+
+      <button id="backPropSearch" class="btn">Back</button><br /><br />
+
+      <h3>Work Space:</h3>
+      <br />
+      <table id="workspaceData">
+        <thead>
+          <tr>
+            <th>Property ID</th>
+            <th>Work Space ID</th>
+            <th>Type</th>
+            <th>Capacity</th>
+            <th>Smoking</th>
+            <th>Availability Date</th>
+            <th>Lease Term</th>
+            <th>Price</th>
+            <th>Contact Information</th>
+            <th>Rating</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+        <tbody id="workSpaceTable">
+          <!-- Table rows will be added dynamically here -->
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <p class="center">&copy; 2024 Collab Space. All rights reserved.</p>
+    </footer>
+
+    <script src="coworker-workSpaceSearch.js"></script>
+  </body>
+</html>

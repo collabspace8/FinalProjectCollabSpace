@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owner-style.css">
+    <title>Add Property</title>
+</head>
+
+<body>
+    <h1>Add a new property</h1>
+    <form id="propertyForm">
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" required><br>
+        <label for="neighborhood">Neighborhood:</label><br>
+        <select id="neighborhood" name="neighborhood" required>
+            <option value="Downtown">Downtown</option>
+            <option value="North East">North East</option>
+            <option value="North West">North West</option>
+            <option value="South East">South East</option>
+            <option value="South West">South West</option>
+        </select><br>
+        <label for="squarefeet">Square Feet:</label><br>
+        <input type="number" id="squarefeet" name="squarefeet" required><br>
+        <label for="parking">Parking:</label><br>
+        <select id="parking" name="parking" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+        <label for="publicTranspo">Public Transportation:</label><br>
+        <select id="publicTranspo" name="publicTranspo" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <button id="savePropertyBtn" type="submit">Save</button>
+        <button id="back" type="submit">Back</button>
+    </form>
+
+    <!-- Scripts should be placed at the end of the HTML document -->
+    <script src="add-property.js"></script>
+</body>
+
+</html>

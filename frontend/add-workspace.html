@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owner-style.css">
+    <title>Add Workspace</title>
+</head>
+
+<body>
+    <h1>Add a new workspace</h1>
+    <form id="workspaceForm">
+        <input type="hidden" id="propertyId" name="propertyId" value="">
+        <label for="type">Type:</label><br>
+        <input type="text" id="type" name="type" required><br>
+        <label for="capacity">Capacity:</label><br>
+        <input type="number" id="capacity" name="capacity" required><br>
+        <label for="smoking">Smoking:</label><br>
+        <select id="smoking" name="smoking" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+        <label for="available">Available Date:</label><br>
+        <input type="date" id="available" name="available" required><br>
+        <label for="term">Lease Term:</label><br>
+        <input type="text" id="term" name="term" required><br><br>
+        <label for="price">Price:</label><br>
+        <label for="contactInfo">Contact Email:</label><br>
+        <input type="email" id="contactInfo" name="contactInfo" required><br><br>
+        <form id="workspaceForm" enctype="multipart/form-data">
+            <input type="file" id="image" name="image">
+            <input type="hidden" id="propertyId" name="propertyId" value="">
+            <button id="saveWorkspaceBtn" type="button">Save</button>
+            <button id="back" type="button">Back</button>
+        </form>
+    </form>
+    <script src="add-workspace.js"></script>
+</body>
+
+</html>
